@@ -77,14 +77,16 @@ p{
     border: 1px solid #ccc;
     width: 100%;
     max-width: 400px;
+    cursor: pointer;
 }
 
-#formulario input:hover {
-    background-color: #555;
-     cursor: pointer;
-}
 .enviar{
-    background-color: rgb(150, 108, 108);
+    background-color: rgb(202, 183, 183);
+    
+}
+
+.enviar:hover{
+    background-color: rgb(136, 88, 88) ;
 }
 footer {
     margin-top: 50px; /* Espaço acima do footer */
