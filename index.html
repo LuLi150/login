@@ -1,38 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Portifólio</title>
 </head>
-<header>
+
+<!--introdução-->
 <body>
+<header>
     <section class="titulo">
         <img src="IMG-20250418-WA0039.jpg" alt="foto"><br>
-        <section class="titulo">
-            <h2>
+            <h1>
                 <i class="fa-solid fa-headphones"></i> Luana Lima
-            </h2>
-        </section>
-        
+            </h1>
     </section>
-</header>
-<main class="container">
-<nav>
-    <a id="item1" href="#sobre">Sobre mim</a>
-    <a id="item2" href="#experiencia">Minhas experiências</a>
-    <a id="item3" href="#formulario">Contato</a>
-</nav>
 
+    <nav>
+        <a class="navegação" href="#sobre">Sobre mim</a>
+        <a class="navegação" href="#experiencia">Minhas experiências</a>
+        <a class="navegação" href="#formulario">Contato</a>
+    </nav>
+</header>
+
+<!--desenvolvimento-->
+<main class="container">
 <section id="Sobre">
     <h2>Sobre mim</h2>
     <p>Gosto de tecnologia e de viajens para lugares novos.</p>
 </section>
+
 <section id="experiencia">
         <h2>Minhas experiências</h2>
         <p>Já tenho alguns conhecimentos com a progrmação.</p>
@@ -40,18 +42,23 @@
         </p>
 </section>
 
-    <section id="formulario" >
+<section id="formulario" >
     <h3>Entre em contado</h3>
-    <form method="post" >
+    <form action="#" method="post" >
+        <label>Nome</label>
         <input type="text" placeholder="Nome" class="text" required>
+        <label>Idade</label>
         <input type="number" placeholder="idade" class="text">
+        <label>Email do usuario</label>
         <input type="email" placeholder="email" class="text" required>
         <label for="mensagem"> Digite sua mensagem</label><br>
         <textarea name="mensagem" cols="7" rows="7"></textarea>
-        <input type="submit" value="Enviar">
+        <input type="submit" class="enviar" value="Enviar">
     </form>
-</div>
+</section>
 </main>
+
+<!--conclusão-->
 <footer>© 2025 Luana de Lima. Todos os direitos reservados.</footer>
 </body>
 </html>
